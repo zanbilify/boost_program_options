@@ -1,0 +1,29 @@
+[package]
+name = "boost_program_options"
+description = "Boost C++ library boost_program_options packaged using Zanbil"
+version = "0.1.0"
+edition = "2024"
+links = "boost_program_options"
+license = "BSL-1.0"
+repository = "https://github.com/zanbilify/boost_program_options"
+
+[package.metadata.zanbil]
+make_dependencies_public = true
+
+[dependencies]
+boost_any = { version = "0.1.0", path = "../boost_any" }
+boost_bind = { version = "0.1.0", path = "../boost_bind" }
+boost_config = { version = "0.1.0", path = "../boost_config" }
+boost_core = { version = "0.1.0", path = "../boost_core" }
+boost_detail = { version = "0.1.0", path = "../boost_detail" }
+boost_function = { version = "0.1.0", path = "../boost_function" }
+boost_iterator = { version = "0.1.0", path = "../boost_iterator" }
+boost_lexical_cast = { version = "0.1.0", path = "../boost_lexical_cast" }
+boost_smart_ptr = { version = "0.1.0", path = "../boost_smart_ptr" }
+boost_static_assert = { version = "0.1.0", path = "../boost_static_assert" }
+boost_throw_exception = { version = "0.1.0", path = "../boost_throw_exception" }
+boost_tokenizer = { version = "0.1.0", path = "../boost_tokenizer" }
+boost_type_traits = { version = "0.1.0", path = "../boost_type_traits" }
+
+[build-dependencies]
+zanbil-boost-build = "0.1.0"
